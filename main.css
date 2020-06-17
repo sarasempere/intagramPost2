@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="main">
+        <div id="contenedor">
+
+            <div id="header">
+                <img id="logo"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///9CQkI/Pz9WVlY1NTXt7e0xMTFHR0fd3d3z8/PNzc08PDw5OTkyMjI3NzctLS3AwMBNTU1cXFyFhYXm5ub4+Ph0dHSenp7W1tasrKxpaWmkpKS+vr56enqLi4tvb2+1tbWWlpYnJydjY2PIyMiAgIASEhKRkZEpr7soAAAIlklEQVR4nO2da3uiOhSFIyKK3NSCt1ZrWz39///wYB2mJcqSyF5A58n7eTpxQy4re68EpSwWi8VisVgsFovFYrFYLBaLxWKxWH4Tk/Gwf4wnghGmidM/klQwwpEz6B/OSDBCf96/EJ25LxhhtuhhhItMMEL1GnQd0BXBq2SAatfDCHeiEe7DrgO6ItyLRrjqYYQr0QgPbtcBXeEeRCM8Rl0HdEV0FI1w3cMI16IRTno4DiVlaS5Me7jiS8rSXLaN+xaiM5YUbTm9E6bOXDZA1Tth6iyEI+ydMBWWpUo99S7CJ+EIeyfbhEVbD2WbsGhTatY3URPNhCOcel2HpOFNhSOcJF2HpJHIirZc1PQuQmFJo9R71yFpvEsHqHq3WohHOOyXbHOG4hFu+yVqgq14hD2TbeKirXeyTVy0KbWJuw6qRLwRj/ClX8LUfRGPcAqEqRO7DFCvERdtuWyrFqbO1h8xQDU9cdEGZRthbboABoa8aFMZmEsD8dYuAC0cihYPv8hQlxFv7YsR6DZz+QhRto3QZc6gof9BaG9ZLWo82fRzAZi+gyWhPSDbPNkiSQHInBBEm1Jv1VONcKGrAMio8I3Q3nN1e+J5rwvgmcbPhPZAPpEgg8+cqscF5ZmCcS9sGigAlQSCaINzN2Vmg+uTJy/alEqrRwVldYIVvZCxPo0qmyMJU1iVlXTt/W2w+pHqGiqbSHAEj1TUtfcXVCQtP9L0P08AtCGVLo9eANk2zRcxYud0CJm2M8C9p3lb6L4GYddeAXDvabKNbkcNPykRrurLNnb6mCLaoGzTW2TbUUlCGLj39F7DtqNGDNGm1Lr6HQan8j9lJ8hdzoYUuPd0cws7QS7s2isYVQ8ufQVm+xoChmjLqV4CdBW1JvsaHE6ACqzjTjnCCbeXOmNShGi/pglT7opPkqV4z10e+mTZRtpxm8g2sh2VlDWBq5wuMrjClCTajGQb145KEm1wldMztCARKIC4a68AuPf0LDtI5gpAqiJA9167sk30fOxPUBlYl21e01O+MEJONS8HabHyv5yG46aAtjxWgEi26WVgvymoPMoSbbgMLK32gXiniTZcBpbesYGMAk20YdkmnVdAxTyWaMOyTdqFhQrAnHLlnVbFnXSfoAAs79orAO498cI6SEgSXHsFSLad7v+5ER9gu83JJZ5JgWyTrpUgCxZLtCk1qp7BxYukYHMSkTJtOX51q9LpLx9tTmiyVGXgSIKwWTCtnradIcG1VwCGfyjbdUAJgeSLuABkWywr29p27RUA9164mTZC27aDpZfi2isAQmMQN7IlJNpqA1x0FNdejXYbor+YbkQb89CFQbKOKNqYZ2X1hCtwAhBFm1ITWl3QIGnucsqjF1JaolfbQSNtEfBkaS5MUQasEVoWZFSd9HLGPFmKD100Iy6/GNBZKEctvuGdlS2/GDDgiZm2M1tShM6wvF9Ae22Oa6+AZXbS1TQSbRzXXgGSbUFUwuhtG1R2SK69AiDbgv1x9oOjURlYT/O0fdTiG5Rt07KYRh3awBhHFW3Yvadloo3cewbmRtIRpAJw914j954u2kAyQfiuPZ0URKjN4ka3EhmItogp2pTyQc1LSxAZXSYZa0ZxMEt5VEmDysDOuNw0yCVdo52BAQ9yEHEDVAOwq9HceybjULu5GiTXiQXgC/XLwCZ3gOs/G4g2sizFZeDyWMrqB3h1CeILmNC4os3IvWfgT9RlaXeizeisrIFs018MaIUs2ljuPRPRdiBHaOLeq59c9bSHA0Y7WbRBm4ve1WaLJArv91Qn9LytpsSQ35or2vBKdVUT8o/7cewGwAAfuPH8bXqlUsCqSywAX8jQbRy3/iA97OZRfKvXBa47PM1u/mBwqUlCFm0qQ9Xnir/x18+voVfqsHnXdHabScWvRVcYOuwIkYMAXfTnT9/myaXDOmGUDFdr8EvRUGDd9vMN2LndGyKjl9049sL50/FOIR659riZtjNg911nmptMa1QdkGtP2rdzDci2iS1VyLXHFm3tuPdQAZjn2itow70HRBu1AHwByTapHoREG+uoxTdItknZQLoUbflaBVIozuA0a+rIGh12QOaxLt0q/QKUfnGCKPlYrR+NMpcFw1wWgAZo52N//op7W/dckM13B/NHPdksB969vQjpUpMSKFn7/SrdcPh5rK8g/dnTPI5R7yz+Z6ZrrwDItvKrzDvspoaAydbP9TaSX/8rX7TBqfzq98TJfP+CRk56OA2S2CChw3TtFZgdLcxfZbC9vZHwp58LuD++FSHTtVdgfrTQCd3BUpt7JputU7dr/oDq2it46GhhPvck888/uyZ/ts+75kOOgBZEW4MbIfJlJFhu1qtt/MDL+0MLog1fmXyXIN8BN7FzkMujF8g3QmCEvda34bn3akB17RWgQxd8+KJNGdWUpKGXRy90+KWLFnKJZ1juvRqQXXsFHX45t4Vc4hnk3iPTimjr9EsXrYi2Tr90QXbtFXT45VzSXXs67KvKAJQLkq8BtS824ndT3Cbr7gNl8p8iu013vdRtKcLOhKn4F3KrWCQP79EbxRcmzBPAP/Fnn+MH8ywP8zPP0w7p5jVwW3qVTugGeq6uFbLp2yKMzPKdD0QXBR+ra09Ra6SHp7FJztqM4Ctn3sHLK5NNnhfvj+cHq8hf3vu20lPUOtlxPw8NE/QoOtPaVTtMNsvx3fpfnfDic/2xHQFqjJ/PPXdquPdeXqMacjuMXk7hbS/i3ejiyHlq7ANoh/XzdmA29+Tzyvi1Tj21P4yO+3umg78ErvfxNm1nYyRKlm6W3r25J59X3FMXekWM6duwchk565XFcxvVJDLpy2nuXc09gRsN98df2DVvk+ue1+h77nFCL6z2QP9a/OPeOfugz/ugG/b8f4T08DrcQfuJxWKxWCwWi8VisVgsFovFYrFYLBbLv8v/pBaoy5noQfUAAAAASUVORK5CYII="
+                    alt="logo fake html5 para ejercicio IG">
+                <p> <span>HTML</span> <br> Rigoberto</p>
+                <svg class="bi bi-three-dots-vertical" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+            </div>
+
+            <div id="content">
+                <img src="https://www.boredpanda.es/blog/wp-content/uploads/2016/09/fotografo-paisajes-instagram-jannik-obenhoff-alemania-2.jpg"
+                    alt="paisaje">
+            </div>
+
+            <div id="buttons">
+
+                <svg class="bi bi-cursor" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z" />
+                </svg>
+                <svg class="bi bi-chat" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                </svg>
+                <svg class="bi bi-heart" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+            </div>
+            <div id="mark">
+                <svg class="bi bi-bookmark" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 12l5 3V3a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12l5-3zm-4 1.234l4-2.4 4 2.4V3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10.234z" />
+                </svg>
+            </div>
+            <div id="footer">
+                <p class="pFooter">Liked by <span>4Geeks Academy, html5, web</span> and <span>100,000 others</span></p>
+                <p class="pFooter">Bacon ipsum dolor amet chislic bresaola salami sausage. Frankfurter cow incididunt aute minim rump laboris pork tail hamburger dolor. Reprehenderit qui ball tip, pork chop short ribs picanha et lorem ipsum. Sunt laboris kevin ex sed.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

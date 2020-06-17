@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60em;
+    
+   
+}
+.main {
+    background-color: black;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+.post{
+  background-color: white;
+  width: 60%;
+  height: 90%;
+}
+
+.header { 
+    height: 8%;
+    width: 95%;
+    display: inline-flex;
+    margin: 0.6em;
+
+}
+
+#logo{
+    height: 4em;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 0.6em;
+   text-align: right;
+    
+}
+
+.content{
+    overflow: hidden;
+    height: 62%;
+}
+
+.buttons{
+    height: 2em;
+    margin-left: 0.6em;
+    overflow: scroll;
+}
+
+#mark{
+    height: 2em;
+    margin-right: 0.6em;
+    float: right;
+}
+
+.footer{
+    margin-top: 0.6em;
+    margin-left: 0.6em;
+    height: 10em;
+    overflow: hidden;
+    font-size: 1em;
+}
+
+span{
+    font-weight: bold;
+}
+
